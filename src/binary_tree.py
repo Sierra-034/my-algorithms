@@ -1,3 +1,5 @@
+from common import prepare_binary_tree_data
+
 class TreeNode:
     def __init__(self, data = None):
         self.data = data
@@ -27,5 +29,5 @@ def get_node(value: int, tree: TreeNode) -> TreeNode:
             return item
 
 if __name__ == '__main__':
-    lyst = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+    lyst = prepare_binary_tree_data()
     tree = create_level_order(lyst)
